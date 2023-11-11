@@ -19,22 +19,56 @@
     color: green;
 }
 /* task 2 */
-
- .container > ul:first-child{
-
+/* Структурні псевдокласи */
+.container > .container-list:first-child{
+ color: red;
 }
 
-.container > ul:nth-child(2){
-
+.container > .container-list:nth-child(2){
+ color: orange;
 }
 
-.container > ul:not([type="submit"]){
-
+.container > .container-list:nth-child(3){
+ color: green;
 }
 
-.container > ul:first-child{
-
+.container > .container-list:nth-child(4){
+ color: yellow;
 }
+
+.container >.container-list:last-child{
+ color: blue;
+}
+
+/* Псевдокласи стану */
+
+.container > .container-list:first-child:hover{
+    color: green;
+}
+
+.container-link:active{
+    color: pink;
+}
+
+.container-link:visited{
+    color: black;
+}
+
+.container-link:focus{
+    color: orangered;
+}
+
+.container-button:not([type="submit"]){
+    color: aqua;
+}
+
+
+
+
+
+
+
+
 
 
 
